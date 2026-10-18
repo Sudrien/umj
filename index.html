@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Unprofitable Mahjong</title>
+<meta name="robots" content="noindex">
+<link rel="canonical" href="https://sudrien.github.io/unprofitable-mahjong/">
+<!-- sudrien.github.io/umj: a short address for Unprofitable Mahjong, used
+     by the Tab5's replay QR codes. It forwards to the game, keeping the
+     #replay=... (and any ?query) -- which a meta refresh can drop, so
+     the forwarding is a line of script, with the refresh as a fallback. -->
+<script>location.replace('https://sudrien.github.io/unprofitable-mahjong/' + location.search + location.hash);</script>
+<noscript><meta http-equiv="refresh" content="0; url=https://sudrien.github.io/unprofitable-mahjong/"></noscript>
+</head>
+<body>
+<p><a id="go" href="https://sudrien.github.io/unprofitable-mahjong/">Unprofitable Mahjong</a></p>
+<script>document.getElementById('go').href += location.search + location.hash;</script>
+</body>
+</html>
